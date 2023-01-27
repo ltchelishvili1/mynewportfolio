@@ -17,73 +17,53 @@ const BackParticles = () => {
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        options={{
-          fpsLimit: 60,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
+        options={
+          {
+            background: {
+              color: "#000", // this sets a background color for the canvas
+            },
+            fullScreen: {
+              enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
+              zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
+            },
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true, // enables the click event
+                  mode: "push", // adds the particles on click
+                },
+                onHover: {
+                  enable: true, // enables the hover event
+                  mode: "repulse", // make the particles run away from the cursor
+                },
               },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 2.4,
+              modes: {
+                push: {
+                  quantity: 10, // number of particles to add on click
+                },
+                repulse: {
+                  distance: 100, // distance of the particles from the cursor
+                },
               },
             },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              directions: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
+            particles: {
+              links: {
+                enable: true, // enabling this will make particles linked together
+                distance: 200, // maximum distance for linking the particles
               },
-              random: false,
-              speed: 4,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
+              move: {
+                enable: true, // enabling this will make particles move in the canvas
+                speed: { min: 1, max: 5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
               },
-              value: 80,
+              opacity: {
+                value: { min: 0.3, max: 0.7 }, // using a different opacity, to have some semitransparent effects
+              },
+              size: {
+                value: { min: 1, max: 3 }, // let's randomize the particles size a bit
+              },
             },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-        }}
+          }
+        }
       />
     </ParticleContainer>
   );
