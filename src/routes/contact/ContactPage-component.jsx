@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 
 import emailjs from "@emailjs/browser";
 
-import LottieModal from "../lottieModal/LottieModal-component";
 
 import ContactLottie from "./ContactLottie.json";
 import {
@@ -10,11 +9,11 @@ import {
   VALIDATOR_EMAIL,
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
-} from "../Validate/validators";
+} from "../../components/Validate/validators";
 
 import { useState } from "react";
 
-import BackDrop from "../modal/BackDrop-component";
+import BackDrop from '../../components/modal/BackDrop-component';
 
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import Typewriter from "typewriter-effect";
 import anim from "./63921-developer.json";
-import LottieModal from "../lottieModal/LottieModal-component";
+import LottieModal from "../../components/lottieModal/LottieModal-component";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,6 +15,7 @@ import {
   TextContainer,
 } from "./LandingPage.styles";
 import styled from "styled-components";
+
 
 const LandingPage = () => {
   useEffect(() => {

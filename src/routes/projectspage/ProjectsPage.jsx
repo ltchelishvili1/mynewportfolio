@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import SliderComponent from "../slider/slider.component";
+import SliderComponent from "../../components/slider/slider.component";
 
 import { ProjectContainer } from "./ProjectsPage.styles";
 
@@ -15,11 +15,9 @@ const ProjectsPage = () => {
   }, []);
 
   return (
-    <ProjectContainer  data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom">
-      <p  data-aos="fade-left"
-   >Projects So Far</p>
-      <SliderComponent  />
+    <ProjectContainer data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <p data-aos="fade-left">Projects So Far</p>
+      <SliderComponent />
     </ProjectContainer>
   );
 };

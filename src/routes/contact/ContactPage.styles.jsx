@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 import { motion } from "framer-motion";
 
-import LottieModal from "../lottieModal/LottieModal-component";
+import LottieModal from "../../components/lottieModal/LottieModal-component";
 
 export const Cont = styled.div`
   display: flex;

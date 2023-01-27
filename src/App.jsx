@@ -9,12 +9,12 @@ import {
 
 import Navbar from "./components/navbar/Navbar-component";
 import BackParticles from "./components/particles/BackParticles.component";
-import LandingPage from "./components/landingPage/LandingPage.components";
-import SkillsPage from "./components/SkillsPage/SkillsPage-component";
-import Faq from "./components/faq/Faq-component";
-import ProjectsPage from "./components/projectspage/ProjectsPage";
-import ContactPage from "./components/contact/ContactPage-component";
+import LandingPage from "./routes/landingPage/LandingPage.components";
+import SkillsPage from './routes/SkillsPage/SkillsPage-component'
+import Faq from './routes/faq/Faq-component'
+import ProjectsPage from "./routes/projectspage/ProjectsPage"
 import TopContent from "./components/topContent/TopContent";
+import ContactPage from './routes/contact/ContactPage-component'
 
 import { ModeContext } from "./contexts/ModeContext";
 

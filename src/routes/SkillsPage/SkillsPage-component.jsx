@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import LottieModal from "../lottieModal/LottieModal-component";
+import LottieModal from "../../components/lottieModal/LottieModal-component";
 import HTMLLogo from "./htmlLottie.json";
 import CSSLogo from "./cssLottie.json";
 import FrontEndLanguages from "./FrontEndLanguages";
