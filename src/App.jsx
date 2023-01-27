@@ -10,11 +10,11 @@ import {
 import Navbar from "./components/navbar/Navbar-component";
 import BackParticles from "./components/particles/BackParticles.component";
 import LandingPage from "./routes/landingPage/LandingPage.components";
-import SkillsPage from './routes/SkillsPage/SkillsPage-component'
-import Faq from './routes/faq/Faq-component'
-import ProjectsPage from "./routes/projectspage/ProjectsPage"
+import SkillsPage from "./routes/SkillsPage/SkillsPage-component";
+import Faq from "./routes/faq/Faq-component";
+import ProjectsPage from "./routes/projectspage/ProjectsPage";
 import TopContent from "./components/topContent/TopContent";
-import ContactPage from './routes/contact/ContactPage-component'
+import ContactPage from "./routes/contact/ContactPage-component";
 
 import { ModeContext } from "./contexts/ModeContext";
 
@@ -40,11 +40,9 @@ function App() {
 
   return (
     <>
-      {
-        // <BackParticles />
-      }
+      <BackParticles />
       <div>
-        <TopContent isDark={isDark} toggleMode = {toggleMode} />
+        <TopContent isDark={isDark} toggleMode={toggleMode} />
         <AppContainer isLight={isDark}>
           <Router>
             <Navbar />
