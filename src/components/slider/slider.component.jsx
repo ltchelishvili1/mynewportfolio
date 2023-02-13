@@ -2,6 +2,7 @@ import { Autoplay, Navigation } from "swiper";
 
 import Lshop from "../../assets/LSHOP.png";
 import Ecomm from "../../assets/Ecomm.png";
+import CvCreat from '../../assets/cvcreator.png'
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -37,6 +38,13 @@ const SliderComponent = () => {
           <Button>visit website</Button>
         </a>
       </CustSlider>
+      <CustSlider>
+        <Image src={CvCreat} alt="cvcreator" />
+        <a href="https://inspiring-ganache-8aee97.netlify.app/">
+          <Button>visit website</Button>
+        </a>
+      </CustSlider>
+
     </SwiperCont>
   );
 };
