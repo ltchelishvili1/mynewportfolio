@@ -47,7 +47,7 @@ const SliderComponent = () => {
       </CustSlider>
       <CustSlider>
         <Image src={Chat} alt="chat" />
-        <a href="https://inspiring-ganache-8aee97.netlify.app/">
+        <a href="https://endearing-wisp-8077bb.netlify.app/">
           <Button>visit website</Button>
         </a>
       </CustSlider>
