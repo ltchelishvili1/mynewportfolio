@@ -8,6 +8,9 @@ export const SwiperCont = styled(Swiper)`
   @media (max-width: 728px) {
     scale: 1.1 0.9 ;
   }
+  @media (max-width: 1920px) {
+    scale: 1.2 0.7 ;
+  }
 `;
 
 export const Image = styled.img`
@@ -27,6 +30,7 @@ export const ImgCont = styled.div`
     
  
   }
+  
 `;
 
 export const Button = styled.button`

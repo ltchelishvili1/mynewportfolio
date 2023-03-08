@@ -8,6 +8,9 @@ export const Image = styled.img`
 export const SkillsPageContainer = styled.div`
   width: 100%;
   height: 100px;
+  @media (max-width: 1920px) {
+   scale: .8;
+  }
 `;
 
 export const Cont = styled.div`
@@ -25,6 +28,7 @@ export const Cont = styled.div`
 
 export const ListContainer = styled.div`
   display: flex;
+ 
   @media (max-width: 800px) {
     display: grid;
     grid-template-columns: 50% 50%;
